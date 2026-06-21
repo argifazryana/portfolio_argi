@@ -1,3 +1,8 @@
+* {
+    max-width: 100%;
+    overflow-x: hidden; /* Mencegah scroll horizontal yang tidak diinginkan */
+}
+
 /* --- MINIMALIST CYBER-TECH (FIXED DARK THEME) --- */
 :root {
     --bg-main: #0f1115;
@@ -419,4 +424,28 @@ body {
     .btn { width: 100%; text-align: center; }
     .btn-outline { margin-left: 0; margin-top: 10px; }
     .filter-container { justify-content: center; }
+}
+/* --- RESPONSIVE OPTIMIZATION --- */
+
+/* Untuk Tablet dan HP */
+@media (max-width: 768px) {
+    .navbar { padding: 10px 0; }
+    .nav-menu { display: none; } /* Opsional: Anda bisa buat hamburger menu nanti */
+    
+    .hero-section { padding: 100px 0 50px 0; text-align: center; }
+    .hero-title { font-size: 2rem; }
+    
+    .about-grid { grid-template-columns: 1fr; gap: 20px; }
+    
+    .projects-grid { grid-template-columns: 1fr; }
+    
+    .btn { width: 100%; display: block; margin: 10px 0; }
+    
+    .section { padding: 50px 0; }
+}
+
+/* Pastikan gambar tidak meluap */
+img {
+    max-width: 100%;
+    height: auto;
 }
