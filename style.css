@@ -61,10 +61,33 @@ body {
     border-left: 3px solid var(--accent);
     padding-left: 8px;
 }
-.nav-menu { 
-    display: flex; 
-    align-items: center; 
-    gap: 24px; 
+/* --- RESPONSIVE OPTIMIZATION --- */
+@media (max-width: 768px) {
+    .navbar { padding: 10px 0; }
+    
+    /* UBAH INI: Agar menu tetap tampil tapi rapi */
+    .nav-menu { 
+        gap: 10px; /* Perkecil jarak antar menu di HP */
+        font-size: 0.8rem;
+    }
+    
+    .hero-section { padding: 80px 20px 40px 20px; text-align: center; }
+    .hero-title { font-size: 2rem; }
+    
+    .about-grid { grid-template-columns: 1fr; gap: 20px; }
+    
+    .projects-grid { 
+        grid-template-columns: 1fr; /* Jadi satu kolom agar tidak kekecilan */
+    }
+    
+    /* Agar tombol tidak tumpang tindih */
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn { width: 100%; margin: 5px 0 !important; }
+    
+    .section { padding: 40px 0; }
 }
 .nav-link { 
     text-decoration: none; 
@@ -447,4 +470,9 @@ body {
 img {
     max-width: 100%;
     height: auto;
+}
+@media (max-width: 480px) {
+    .nav-container { padding: 0 15px; }
+    .nav-menu { gap: 10px; }
+    .nav-link { font-size: 0.75rem; } /* Perkecil font agar muat */
 }
