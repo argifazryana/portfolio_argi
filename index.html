@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Junior Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-light text-dark transition-colors">
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">ARGI.DEV</a>
+            
+            <div class="nav-menu">
+                <a href="#tentang" class="nav-link">Tentang</a>
+                <a href="#riwayat" class="nav-link">Riwayat</a>
+                <a href="#keahlian" class="nav-link">Keahlian</a>
+                <a href="#proyek" class="nav-link">Proyek</a>
+                <a href="#kontak" class="nav-link">Kontak</a>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <span class="hero-subtitle">Halo, Selamat Datang!</span>
+            <h1 class="hero-title">
+                Saya <span id="typewriter" class="text-gradient"></span><span class="cursor">|</span>
+            </h1>
+            <p class="hero-description">
+                Spesialis dalam mengembangkan solusi web yang efisien, responsif, dan berorientasi pada kemudahan akses serta kenyamanan bagi pengguna.
+            </p>
+            <div class="hero-buttons">
+                <a href="#proyek" class="btn btn-primary">Lihat Karya</a>
+                <a href="#kontak" class="btn btn-outline">Hubungi Saya</a>
+            </div>
+            
+            <div class="visitor-counter">
+                <i class="fa-solid fa-eye"></i> Profil ini telah dilihat sebanyak <strong id="visitorCount">1</strong> kali
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="section section-white scroll-anim">
+        <div class="section-container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="about-grid">
+                <div class="about-avatar-box">
+                    <div class="avatar-card">
+                        <img src="Image/argi.jpg" alt="Foto Argi" style="width: 100%; height: auto; border-radius: 6px;">
+                        <i class="fa-solid fa-user-code"></i>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>
+                        Saya adalah seorang Web developer yang antusias dalam menerjemahkan logika pemrograman ke dalam solusi digital yang fungsional dan efisien. Memiliki pemahaman kuat mengenai arsitektur web modern serta berkomitmen tinggi dalam mengimplementasikan best practices pada pengembangan sistem dan infrastruktur web.
+                    </p>
+                    <p>
+                        Sebagai seorang <strong>Junior</strong>, saya berkomitmen untuk terus mengadopsi praktik terbaik (*best practices*) dalam pengembangan teknologi web serta infrastruktur pendukungnya.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="riwayat" class="section scroll-anim">
+        <div class="section-container">
+            <h2 class="section-title">Perjalanan & Edukasi</h2>
+            <div class="timeline">
+                <!-- Kartu 1: Pendidikan Teknis -->
+                <div class="timeline-item">
+                    <div class="timeline-date">2021</div>
+                    <h3>Pelatihan IT ADINUSA</h3>
+                    <p>Mengikuti program pelatihan teknis intensif yang mencakup administrasi sistem Linux dan implementasi Kubernetes untuk infrastruktur web.</p>
+                </div>
+
+                <!-- Kartu 2: Pengembangan Diri -->
+                <div class="timeline-item">
+                    <div class="timeline-date">2019 - Sekarang</div>
+                    <h3>Studi Pengembangan Web</h3>
+                    <p>Fokus mendalami pengembangan aplikasi web modern, dengan penekanan pada peningkatan keterampilan teknis dan eksplorasi teknologi *stack* terkini.</p>
+                </div>
+
+                <!-- Kartu 3: Awal Perjalanan -->
+                <div class="timeline-item">
+                    <div class="timeline-date">2018</div>
+                    <h3>Awal Mula Belajar</h3>
+                    <p>Mulai mengeksplorasi dunia pemrograman dengan membangun fondasi dasar pada pengembangan web statis dan logika dasar pemrograman.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="keahlian" class="section section-white scroll-anim">
+        <div class="section-container">
+            <h2 class="section-title">Keahlian & Tools</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fa-brands fa-html5 icon-html"></i>
+                    <h3>HTML5 / CSS3</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-js icon-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-react icon-react"></i>
+                    <h3>React / Next.js</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-linux icon-linux"></i>
+                    <h3>Linux SysAdmin</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyek" class="section scroll-anim">
+        <div class="section-container">
+            <h2 class="section-title">Proyek Pilihan</h2>
+            
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="system">System/DevOps</button>
+            </div>
+            
+            <div class="projects-grid" id="projectsGrid"></div>
+        </div>
+    </section>
+
+    <section id="kontak" class="section section-white scroll-anim">
+        <div class="contact-container">
+            <h2 class="section-title">Mari Berkolaborasi</h2>
+            <p>Kirimkan pesan langsung kepada saya untuk peluang kerja sama atau pertanyaan lainnya.</p>
+            
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="formName" placeholder="Nama Anda" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="formEmail" placeholder="Email Anda" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="formMessage" rows="5" placeholder="Pesan Anda..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Kirim via WhatsApp <i class="fa-brands fa-whatsapp ml-2"></i></button>
+            </form>
+
+            <div class="contact-links" style="margin-top: 40px;">
+                <a href="https://github.com/argifazryana/argifazryana.github.io" class="contact-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/argifazryana/" class="contact-icon" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Argi. All Rights Reserved.</p>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" title="Kembali ke atas">
+        <i class="fa-solid fa-arrow-up"></i>
+        <svg class="progress-circle" width="45" height="45" viewBox="0 0 45 45">
+            <circle class="progress-bg" cx="22.5" cy="22.5" r="20"></circle>
+            <circle id="progressValue" class="progress-line" cx="22.5" cy="22.5" r="20"></circle>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
